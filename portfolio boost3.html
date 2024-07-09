@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<style>
+    .paragraph {
+        text-align: justify;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: rgb(199, 222, 199);
+    }
+
+    /* visited link */
+    a:visited {
+        color: rgb(164, 173, 164);
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: rgb(252, 252, 252);
+    }
+
+    /* selected link */
+    a:active {
+        color: yellow;
+    }
+
+    .left {
+        height: 80%;
+        overflow: scroll;
+        /* scrollbar-width: none; */
+        overflow-x: hidden;
+        width: 285px;
+        background: black;
+
+    }
+
+    .about {
+        width: 80px;
+        margin-left: 10px;
+        font-weight: 14px;
+    }
+
+    .doo {
+        float: left;
+    }
+
+    .sjk {
+        border-left: 3px solid rgb(136, 147, 136);
+        height: 240px;
+        margin-top: 15px;
+        margin-left: -26px;
+    }
+
+    .jjk {
+        border-left: 3px solid rgb(136, 147, 136);
+        height: 271px;
+        margin-top: 15px;
+        margin-left: -26px;
+    }
+
+    .ssk {
+        border-left: 3px solid rgb(136, 147, 136);
+        height: 445px;
+        margin-top: 15px;
+        margin-left: -26px;
+    }
+
+    .kkk {
+        padding: 15px;
+        color: white;
+        font-size: 14px;
+        position: fixed;
+        left: 0%;
+        bottom: 0;
+        width: 300px;
+        z-index: 9999;
+        background-color: black;
+
+    }
+
+    @media (max-width: 1199px) {
+        .kkk {
+            position: static;
+            width: auto;
+            padding-right: 20px 15px;
+            --bs-gutter-x: 0;
+            --bs-gutter-y: 0;
+        }
+    }
+
+    .jjj {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 300px;
+        transition: all ease-in-out 0.5s;
+        z-index: 9997;
+        transition: all 0, 5s;
+        background: black;
+        padding: 0 15px;
+
+    }
+
+    .btnhover-main-div {
+        position: relative;
+    }
+
+    .title-container {
+        position: absolute;
+        top: 134px;
+        width: 92%;
+        background-color: orangered;
+    }
+
+    .main-h4-div {
+        display: none;
+        margin: 0;
+    }
+
+    .btnhover-main-div:hover .main-h4-div {
+        display: block;
+    }
+
+    @media(max-width:1024px) {
+            {
+            background-attachment: fixed;
+        }
+    }
+
+    .im {
+        padding: 0;
+        margin: 0;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .im {
+        color: hsl(0, 100%, 99%);
+        font-size: 50px;
+        font-weight: bold;
+        font-family: monospace;
+        letter-spacing: 7px;
+        cursor: pointer;
+    }
+
+    h3 span {
+        transition: 0.5s ease-out;
+    }
+
+    h3:hover span:nth-child(1) {
+        margin-right: 5px;
+    }
+
+    h3:hover span:nth-child(1):after {
+        content: "'";
+    }
+
+    h3:hover span:nth-child(2) {
+        margin-left: 30px;
+    }
+
+    h3:hover span {
+        color: #eeff06;
+        text-shadow: 0 0 10px #eeff06, 0 0 20px #eeff06, 0 0 40px #eeff06;
+    }
+
+    .abt {
+
+        border: 3px solid rgb(39, 177, 232);
+        width: 100px;
+    }
+
+    .abtn {
+        border: 3px solid rgb(39, 177, 232);
+        width: 55px;
+    }
+
+    .vvv {
+        border: 3px solid rgb(39, 177, 232);
+        width: 150px;
+        margin-left: 182px;
+    }
+
+    .uuu {
+        border: 3px solid rgb(39, 177, 232);
+        width: 150px;
+        margin-left: 390px;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="row min-vh-100 ">
+        <div class="col-md-3  text-white jjj">
+            <div class="left">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <img src="sushil.jpg" class="rounded-circle img-thumbnail mx-auto d-block  mt-2" width="45%"
+                            alt="Cinque Terre ">
+                        <strong class="mt-2">Sushil Kunwar</strong>
+                    </div>
+                    <div class="col-md-12 mt-3 ">
+                        <a href="" class="rounded-circle btn btn-secondary"><i class="fa-brands fa-twitter "></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100071176676086" class="rounded-circle btn btn-secondary"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sushilll_07/" class="rounded-circle btn btn-secondary"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sushil-jung-kunwar-aa2945312/" class="rounded-circle btn btn-secondary"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="" class="rounded-circle btn btn-secondary"><i class="fa-brands fa-skype"></i></a>
+
+
+                    </div>
+
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12 text-star ">
+                        <h6 class="ms-5"><a href="#home"><i class="fa-solid fa-house mt-4 nav-link scrollto active"></nav>
+                                </i>
+                                &nbsp;Home</a> </h6>
+                        <h6 class="ms-5"><a href="#about"> <i class="fa-solid fa-user mt-4 nav-link scrollto"> </i>
+                                &nbsp;About</a></h6>
+                        <h6 class="ms-5"><a href="#Resume"> <i class="fa-solid fa-file mt-4 nav-link scrollto"> </i>
+                                &nbsp;Resume</a></h6>
+                        <h6 class="ms-5"><a href="#Protfoilo"> <i class="fa-solid fa-book mt-4 nav-link scrollto"> </i>
+                                &nbsp;Protfoilo</a></h6>
+                        <h6 class="ms-5"><a href="#Services"> <i class="fa-solid fa-bars-progress mt-4 nav-link scrollto"> </i>
+                                &nbsp;Services</a></h6>
+                        <h6 class="ms-5"><a href="#Contact"> <i class="fa-regular fa-envelope mt-4 nav-link scrollto"> </i>
+                                &nbsp;Contact</a></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center kkk">
+                <p>@ Copyright iPortfolio <br>
+                    Designed by Sushil Kunwar
+                </p>
+            </div>
+        </div>
+        <div class="col-md-9 sushil" style="margin-left:323px;">
+            <div class="row text-white">
+                <div class="col-md-12" style="background-image: url(sllll.jpg)  ; height: 570px;"id="home">
+                    <div style="margin-top: 247px;" >
+                        <h1 class="fs-1 font-awesome fw-bold"> Sushil Kunwar</h1>
+                        <div class="ddd">
+                            <h3><span>I</span>M<span> WEB  DEVELOPER & GRAPHIC DESINGNER</span></h3>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram" style="padding: 0px 20px;"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ddd" id="about">
+                    <h3><span>About</span></h3>
+                </div>
+                <hr class="abt">
+                <p>Hii, I am sushil. I am an Innovative Web Developer with 1 years of Experience, I have use,
+                    photoshop, canva, Bootstrap, CSS, , HTML, and many more to develop web applications. My experience
+                    journey started .</p>
+            </div>
+            <div class="row " data-aos="fade-in">
+                <div class="col-lg-4 ">
+                    <img src="sushil.jpg" alt="" srcset="" width="100% ">
+                </div>
+                <div class="col-lg-8">
+                    <p class="fs-5  ">III DESINGER & FRONTEND DEVELOPER</p>
+                    <p>It is important to take care of the patient, the patient will be followed by the patient, but it
+                        will happen at such a time that there is a lot of work and pain.</p>
+                    <i class="fa-solid fa-chevron-right mt-4"></i> <strong>Birthday:</strong>
+                    <span>8 march, 2004</span>
+                    <i class="fa-solid fa-chevron-right " style="margin-left: 100px;"></i> <strong>Age:</strong>
+                    <span>21</span>
+                    <br>
+                    <i class="fa-solid fa-chevron-right mt-4"></i> <strong>Website:</strong>
+                    <span>www.sushilkunwar.np</span>
+                    <i class="fa-solid fa-chevron-right ms-5"></i> <strong>Qulificatin:</strong>
+                    <span>+2 </span>
+                    <br>
+                    <i class="fa-solid fa-chevron-right mt-4"></i> <strong>Phone:</strong>
+                    <span>9844388214</span> <i class="fa-solid fa-chevron-right " style="margin-left: 120px;"></i>
+                    <strong>Email:</strong>
+                    <span>sushilkunwar@9gmail.com</span>
+                    <br>
+                    <i class="fa-solid fa-chevron-right mt-4 "></i> <strong>City:</strong>
+                    <span>Dhangadhi</span>
+                    <i class="fa-solid fa-chevron-right" style="margin-left: 150px;"></i> <strong>Freelance:</strong>
+                    <span>Avilable</span>
+                    <div class="mt-3">
+                        <p style="text-align: justify;">Therefore, choosing the services of labor and pains is the
+                            choice of the services. Anyone
+                            can get everything and that. There are no cbomplaints from the prosecutors about their
+                            services
+                            at the time. And all his Because of desire, as said, most offices indeed. But those who are
+                            not
+                            to be repulsed will therefore be pursued. Something really interesting to look for with
+                            desire.
+                            And from him who is repulsed by all the guilt of great praise the pains. </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <h3>Facts</h3>
+                    <hr class="abtn">
+                    <p>It takes great pains to benefit. His needs result from something that actually drives him away.
+                        Let them be what they want. Anyone whom anyone desires. And no one who hinders receives the
+                        others. Because he should flee in this office of convenience, which is here.</p>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <i class="fa-solid fa-face-smile ms-5 fa-5x"></i> <strong class="fs-3 ms-2">250</strong>
+                            <p class="mt-3 ms-5">Happy Clients</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fa-solid fa-address-book ms-5 fa-5x"></i> <strong class="fs-3 ms-2">233</strong>
+                            <p class="mt-3 ms-5">Projects</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fa-solid fa-headphones ms-5 fa-5x"></i><strong class="fs-3 ms-2">500</strong>
+                            <p class="mt-3 ms-5">Hours Of Suppor</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fa-solid fa-users ms-5 fa-5x"></i><strong class="fs-3 ms-2">22</strong>
+                            <p class="mt-3 ms-5">Hard Workers</p>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-lg-12 ">
+                                <h3>Skill</h3>
+                                <hr class="abtn">
+                                <p>It takes great pains to benefit. His needs result from something that actually drives
+                                    him away. Let them be what they want. Anyone whom anyone desires. And no one who
+                                    hinders receives the others. Because he should flee in this office of convenience,
+                                    which is here.</p>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <p>HTML</p>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 100%"></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 ">
+                                        <p>CSS</p>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p class="mt-3">BOOSTSTRAP</p>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 50%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p class="mt-3">PHOTOSHOP</p>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 25%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-lg-12" id="Resume">
+                                <h3 class="fs-3 font-weight">Resume</h3>
+                                <hr class="abt">
+                                <p>It takes great pains to benefit. His needs result from something that
+                                    actually drives him away. Let them be what they want. Anyone whom anyone
+                                    desires. And no one who hinders receives the others. Because he should flee
+                                    in this office of convenience, which is here.</p>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-md-6">
+                                <h3>Sumary</h3>
+
+                                <div class="col-md-12 ">
+                                    <div class="d-flex gap-3">
+                                        <i class="fa-sharp fa-regular fa-circle"></i>
+                                        <div class="sjk">
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <p>SUSHIL Kunwar</p>
+                                                <div>
+                                                    <p class="fst-italic paragraph ">Innovative and deadline-driven
+                                                        Graphic
+                                                        Designer with 3+ years of experience
+                                                        designing and developing user-centered digital/print
+                                                        marketing material from
+                                                        initial concept to final, polished deliverable.</p>
+                                                </div>
+                                                <br>
+                                                <ul>
+                                                    <li>Dhangadhi</li>
+                                                    <li>(123) 456-7891</li>
+                                                    <li>sushilkunwar2@gamil.com</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 ">
+                                    <h3>Education</h3>
+                                    <div class="d-flex gap-3">
+                                        <i class="fa-sharp fa-regular fa-circle"></i>
+                                        <div class="sjk">
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <p class="fs-5">+2 Study in Commerce</p>
+                                                <p>Aishwarya Vidya Niketan</p>
+                                                <div>
+                                                    <div><button type="button"
+                                                            class="btn btn-secondary">2023-2024</button></div>
+                                                    <p class="fst-italic paragraph mt-3">Those who leave will be
+                                                        forgiven. And if any one should work at the time, he should be
+                                                        just. But those pleasures which mark the sands of the port of
+                                                        Nerada as the most worthy of the gentle</p>
+                                                </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-12 ">
+                                    <div class="d-flex gap-3">
+                                        <i class="fa-sharp fa-regular fa-circle"></i>
+                                        <div class="sjk">
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <p class="fs-5">study in canva</p>
+                                                <p class="fst-italic paragraph">Bg Infotech</p>
+                                                <div><button type="button" class="btn btn-secondary">2023-2024</button>
+                                                </div>
+                                                <div>
+                                                    <p class=" mt-3">Because we are blinded to
+                                                        follow. Rejecting and rejecting just what and who is His or his
+                                                        reason whence the pleasures of the things of life are harsher
+                                                        the pleasure of their troubles will not result etlon sader mart
+                                                        dila</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Professional Experience</h3>
+                                <div class="row d-flex">
+                                    <div class="col-md-12 ">
+                                        <div class="d-flex gap-3">
+                                            <i class="fa-sharp fa-regular fa-circle"></i>
+                                            <div class="jjk">
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <p> GRAPHIC DESIGN SPECIALIST</p>
+                                                    <p class="fst-italic paragraph mt-2">BG INFOTECH</p>
+                                                    <div><button type="button"
+                                                            class="btn btn-secondary">Start-2024</button>
+                                                        <div>
+                                                            <ul>
+                                                                <li>Lead in the design, development, and implementation
+                                                                    of
+                                                                    the graphic, layout, and production communication
+                                                                    materials</li>
+                                                                <li>Delegate tasks to the 7 members of the design team
+                                                                    and
+                                                                    provide counsel on all aspects of the project</li>
+                                                                <li>Supervise the assessment of all graphic materials in
+                                                                    order to ensure quality and accuracy of the design
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <h3>Professional Experience</h3>
+                                    <div class="row d-flex">
+                                        <div class="col-md-12 ">
+                                            <div class="d-flex gap-3">
+                                                <i class="fa-sharp fa-regular fa-circle"></i>
+                                                <div class="ssk">
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <p> GRAPHIC DESIGN SPECIALIST</p>
+                                                        <p class="fst-italic paragraph mt-2">BG INFOTECH</p>
+                                                        <div><button type="button"
+                                                                class="btn btn-secondary">2023-2024</button>
+                                                            <div>
+                                                                <ul>
+                                                                    <li>Developed numerous marketing programs (logos,
+                                                                        brochures,infographics, presentations, and
+                                                                        advertisements).
+                                                                        Managed up to 5 projects or tasks at a given
+                                                                        time while under pressure
+                                                                        Recommended and consulted with clients on the
+                                                                        most appropriate graphic design
+                                                                        Created 4+ design presentations and proposals a
+                                                                        month for clients and account managers</li>
+                                                                    <li>Managed up to 5 projects or tasks at a given
+                                                                        time while under pressure
+                                                                    </li>
+                                                                    <li>Recommended and consulted with clients on the
+                                                                        most appropriate graphic design</li>
+                                                                    <li>Created 4+ design presentations and proposals a
+                                                                        month for clients and account managers</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-5" style="text-align: justify; ">
+                            <div class="col-lg-12" id="Protfoilo">
+                                <h3>Portfolio</h3>
+                                <hr class="abt">
+                                <p class="mt-4">It takes great pains to benefit. His needs result from something that
+                                    actually drives him away. Let them be what they want. Anyone whom anyone
+                                    desires. And no one who hinders receives the others. Because he should flee
+                                    in this office of convenience, which here</p>
+
+                            </div>
+
+                            <div class="col-md-12">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home-tab-pane" type="button" role="tab"
+                                            aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                            aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                            aria-controls="contact-tab-pane" aria-selected="false">Designed</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                                            data-bs-target="#disabled-tab-pane" type="button" role="tab"
+                                            aria-controls="disabled-tab-pane" aria-selected="false">frontend
+                                            Project</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content mt-3" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                    aria-labelledby="home-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./WW1.png" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">home</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./PP1.jpg" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">Home</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./PP3.jpg" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">Home</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                    aria-labelledby="profile-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./PP1.jpg" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">Profile</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./PP2.jpg" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">Profile</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./PP3.jpg" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">Profile</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                    aria-labelledby="contact-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./GG1.jpg" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">Design</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./GG2.jpg" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">Design</h4>
+                                                <h4 class="main-h4-div"></h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./GG3.jpg" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">Design</h4>
+                                                <h4 class="main-h4-div"></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel"
+                                    aria-labelledby="disabled-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./WW1.png" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">frontend</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./WW2.png" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">frontend</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 btnhover-main-div">
+                                            <img src="./WW3.png" width="100%" alt="">
+                                            <div
+                                                style="background-color: rgb(108, 150, 202); position: relative;top: -29px;">
+                                                <h4 class="main-h4-div">frontend</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <section class="py-5 py-xl-8">
+                                <div class="container">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                                            <h2 class=" bold text-center" id="Services">Services</h2>
+                                            <hr class="vvv mt-4">
+                                            <p class="text-secondary mb-5 text-center" style="text-align: justify;">We
+                                                have a team of experienced and
+                                                talented professionals who can help you with every aspect of the product
+                                                development process, from ideation to prototyping to launch.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container overflow-hidden">
+                                    <div class="row gy-5">
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="text-center px-xl-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    fill="currentColor" class="bi bi-1-circle-fill text-primary mb-4"
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
+                                                </svg>
+                                                <h5 class="m-2">Graphic Desing</h5>
+                                                <p class="m-0 text-secondary" style="text-align: justify;">Graphic
+                                                    design is a craft where
+                                                    professionals create visual content to communicate messages. By
+                                                    applying visual hierarchy and page layout techniques, designers use
+                                                    typography and pictures to meet users' specific .</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="text-center px-xl-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    fill="currentColor" class="bi bi-2-circle-fill text-primary mb-4"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" />
+                                                </svg>
+                                                <h5 class="m-2">CSS</h5>
+                                                <p class="m-0 text-secondary" style="text-align: justify;">CSS is the
+                                                    acronym of “Cascading Style
+                                                    Sheets”. CSS is a computer language for laying out and structuring
+                                                    web pages (HTML or XML). This language contains coding elements and
+                                                    is composed of these “cascading style sheets” which are equally
+                                                    called CSS fi</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="text-center px-xl-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    fill="currentColor" class="bi bi-3-circle-fill text-primary mb-4"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z" />
+                                                </svg>
+                                                <h5 class="m-2">HTML</h5>
+                                                <p class="m-0 text-secondary" style="text-align: justify;">Structuring
+                                                    web pages. With tags and
+                                                    elements, we can define the headings, paragraphs, and other contents
+                                                    of a web page. ...</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="text-center px-xl-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    fill="currentColor" class="bi bi-4-circle-fill text-primary mb-4"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM7.519 5.057c-.886 1.418-1.772 2.838-2.542 4.265v1.12H8.85V12h1.26v-1.559h1.007V9.334H10.11V4.002H8.176c-.218.352-.438.703-.657 1.055ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z" />
+                                                </svg>
+                                                <h5 class="m-2 ">canva</h5>
+                                                <p class="m-0 text-secondary " style="text-align: justify;">Canva is a
+                                                    graphic design platform that
+                                                    provides tools for creating social media graphics, presentations,
+                                                    promotional merchandise and websites.[6][7][8] Launched in Australia
+                                                    in 2013, the service offers design tools for individuals and
+                                                    companies</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="text-center px-xl-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    fill="currentColor" class="bi bi-5-circle-fill text-primary mb-4"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.006 4.158c1.74 0 2.924-1.119 2.924-2.806 0-1.641-1.178-2.584-2.56-2.584-.897 0-1.442.421-1.612.68h-.064l.193-2.344h3.621V4.002H5.791L5.445 8.63h1.149c.193-.358.668-.809 1.435-.809.85 0 1.582.604 1.582 1.57 0 1.085-.779 1.682-1.57 1.682-.697 0-1.389-.31-1.53-1.031H5.276c.065 1.213 1.149 2.115 2.72 2.115Z" />
+                                                </svg>
+                                                <h5 class="m-2">Boostrap</h5>
+                                                <p class="m-0 text-secondary" style="text-align: justify;">We can help
+                                                    you to promote your business
+                                                    online through a variety of digital marketing channels, including
+                                                    SEO, PPC, and email marketing.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <div class="text-center px-xl-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    fill="currentColor" class="bi bi-6-circle-fill text-primary mb-4"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.21 3.855c-1.868 0-3.116 1.395-3.116 4.407 0 1.183.228 2.039.597 2.642.569.926 1.477 1.254 2.409 1.254 1.629 0 2.847-1.013 2.847-2.783 0-1.676-1.254-2.555-2.508-2.555-1.125 0-1.752.61-1.98 1.155h-.082c-.012-1.946.727-3.036 1.805-3.036.802 0 1.213.457 1.312.815h1.29c-.06-.908-.962-1.899-2.573-1.899Zm-.099 4.008c-.92 0-1.564.65-1.564 1.576 0 1.032.703 1.635 1.558 1.635.868 0 1.553-.533 1.553-1.629 0-1.06-.744-1.582-1.547-1.582Z" />
+                                                </svg>
+                                                <h5 class="m-2">Photoshop</h5>
+                                                <p class="m-0 text-secondary" style="text-align: justify;">We can help
+                                                    you to create high-quality
+                                                    videos, photos, and other media content. We can help you to
+                                                    distribute your content through a variety of channels.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <img src="Picsart_24-05-06_09-08-33-060 (1).jpg"
+                                            class="rounded-circle img-thumbnail " srcset="" style="width: 15%;">
+                                        <h2 class=" bold text-center" id="Contact">Contact</h2>
+                                        <hr class="uuu mt-4">
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-lg-6 border">
+                                        <div class="mb-3 ">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInput"
+                                                placeholder="password enter" required aria-describedby="emailHelp ">
+
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                placeholder="password enter" required>
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.332297185633!2d80.5806791740978!3d28.709613680578805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa13e527e18e84e77%3A0xb449ff1e9cf625a0!2sBG%20Infotechs!5e0!3m2!1sen!2snp!4v1718347784627!5m2!1sen!2snp"
+                                            width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <i class="fa-solid fa-phone mt-2"></i> <span class="ms-2">9843716349</span>
+                                        <br><i class="fa-solid fa-envelope"></i><span
+                                            class="ms-3">sushilkunwar@gmail.com</span><br>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row text-center mt-3 " style="background-color: rgb(184, 181, 181); width: 200%">
+                            <div class=" col-12 ">
+                                <p>@ Copyright iPortfolio <br>
+                                    Designed by Sushil Kunwar
+                                </p>
+                            </div>
+                        </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
